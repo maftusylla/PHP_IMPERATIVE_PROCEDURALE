@@ -44,3 +44,11 @@ do{
 
 }while(!$nomValide);
 }
+$categorie=[
+        "code"=> $code,
+        "nom"=> $nom
+        "produits"=>[]
+];
+
+
+$categories[]=$categorie;
