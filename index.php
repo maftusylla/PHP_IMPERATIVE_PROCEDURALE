@@ -43,9 +43,9 @@ foreach($categories as $categorie){
 
 //a-saisir code et nom 
 
-$codeValide = true
+$codeValide = true;
 do{
-    $code=readline("veuillez saisir le code :"):
+    $code=readline("veuillez saisir le code :");
     if(empty($code)){
         echo "Le code est obligatoire \n";
         $codeValide = false;
@@ -62,13 +62,13 @@ do{
     }
 
 }while(!$codeValide);
-}
 
 
 
-$nomValide = true
+
+$nomValide = true;
 do{
-    $nom=readline("veuillez saisir le nom :"):
+    $nom=readline("veuillez saisir le nom :");
     if(empty($nom)){
         echo "Le nom est obligatoire \n";
         $nomValide = false;
@@ -85,11 +85,11 @@ do{
     }
 
 }while(!$nomValide);
-}
+
 
 $categorie=[
         "code"=> $code,
-        "nom"=> $nom
+        "nom"=> $nom,
         "produits"=>[]
 ];
 
